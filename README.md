@@ -7,17 +7,6 @@ EcoLoop is a sustainability-focused open-source marketplace designed to promote 
 
 <img width="161" height="112" alt="image" src="https://github.com/user-attachments/assets/7996005d-e9a5-48c7-92cf-15d385203b97" />
 
-eco-marketplace/
-│── client/        # Frontend (React/Next.js)
-│── server/        # Backend (Node.js)
-│── docs/          # Documentation
-│── .github/
-│    ├── ISSUE_TEMPLATE/
-│    ├── PULL_REQUEST_TEMPLATE.md
-│── README.md
-│── CONTRIBUTING.md
-│── CODE_OF_CONDUCT.md
-
 # 🌱 EcoLoop – Sustainable Marketplace
 
 EcoLoop is an open-source platform promoting sustainable living by enabling users to buy, sell, or donate unused items while supporting eco-friendly startups.
