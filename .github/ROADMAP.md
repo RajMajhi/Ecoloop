@@ -1,22 +1,25 @@
-#  Project Roadmap
+#  EcoLoop Project Roadmap
 
-## Phase 1 (GSSoC)
-- Basic UI (Landing page, product listing)
-- Backend setup
-- Product APIs
-- Documentation
+## Phase 1 (GSSoC 2026)
+- Setup frontend and backend structure
+- Create landing page UI
+- Implement product listing UI
+- Add beginner-friendly issues
+- Documentation setup
 
 ## Phase 2
-- User authentication
-- Image upload
-- Search and filters
+- User authentication system
+- Product API (CRUD operations)
+- Image upload functionality
+- Search and filtering
 
 ## Phase 3
-- AI-based recommendations
-- Sustainability impact tracking
-- Mobile app version
+- AI-based recommendations for sustainable products
+- User dashboard
+- Wishlist feature
+- Performance optimization
 
 ## Future Scope
-- Community features
-- Chat system
-- Carbon footprint insights
+- Mobile application (Android)
+- Chat system between users
+- Sustainability impact tracking
