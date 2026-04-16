@@ -1,0 +1,82 @@
+[
+  {
+    "id": 1,
+    "name": "Reusable Steel Water Bottle",
+    "price": 499,
+    "category": "Reusable",
+    "description": "Durable stainless steel bottle to reduce plastic waste",
+    "stock": 60
+  },
+  {
+    "id": 2,
+    "name": "Bamboo Toothbrush",
+    "price": 120,
+    "category": "Personal Care",
+    "description": "Eco-friendly biodegradable toothbrush made from bamboo",
+    "stock": 150
+  },
+  {
+    "id": 3,
+    "name": "Organic Cotton Tote Bag",
+    "price": 250,
+    "category": "Shopping",
+    "description": "Reusable cotton bag for daily shopping",
+    "stock": 80
+  },
+  {
+    "id": 4,
+    "name": "Solar Powered Lamp",
+    "price": 899,
+    "category": "Energy",
+    "description": "Portable solar lamp for sustainable lighting",
+    "stock": 40
+  },
+  {
+    "id": 5,
+    "name": "Compostable Garbage Bags",
+    "price": 199,
+    "category": "Home",
+    "description": "Biodegradable garbage bags made from plant materials",
+    "stock": 120
+  },
+  {
+    "id": 6,
+    "name": "Eco-Friendly Notebook",
+    "price": 180,
+    "category": "Stationery",
+    "description": "Notebook made from recycled paper",
+    "stock": 90
+  },
+  {
+    "id": 7,
+    "name": "Wooden Cutlery Set",
+    "price": 220,
+    "category": "Kitchen",
+    "description": "Reusable wooden spoon, fork, and knife set",
+    "stock": 70
+  },
+  {
+    "id": 8,
+    "name": "Natural Loofah Sponge",
+    "price": 99,
+    "category": "Personal Care",
+    "description": "Biodegradable sponge for bathing and cleaning",
+    "stock": 110
+  },
+  {
+    "id": 9,
+    "name": "Reusable Coffee Cup",
+    "price": 350,
+    "category": "Reusable",
+    "description": "Eco-friendly cup to reduce disposable usage",
+    "stock": 65
+  },
+  {
+    "id": 10,
+    "name": "Seed Paper Diary",
+    "price": 300,
+    "category": "Stationery",
+    "description": "Plantable diary made with seed-infused paper",
+    "stock": 50
+  }
+]
