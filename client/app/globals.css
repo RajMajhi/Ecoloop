@@ -247,3 +247,163 @@ button {
     align-items: flex-start;
   }
 }
+
+@media (max-width: 480px) {
+  .page {
+    padding: 16px 12px 32px;
+    gap: 24px;
+  }
+
+  .header {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 16px;
+  }
+
+  .logo {
+    font-size: 20px;
+  }
+
+  .nav {
+    width: 100%;
+    flex-direction: column;
+    gap: 12px;
+  }
+
+  .nav a {
+    width: 100%;
+    padding: 8px 0;
+    font-size: 14px;
+  }
+
+  .ghost {
+    width: 100%;
+    padding: 10px 16px;
+    text-align: center;
+  }
+
+  .hero {
+    grid-template-columns: 1fr;
+    gap: 24px;
+  }
+
+  .hero h1 {
+    font-size: 24px;
+    line-height: 1.2;
+  }
+
+  .subtitle {
+    font-size: 14px;
+    line-height: 1.5;
+  }
+
+  .cta-row {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .primary,
+  .secondary {
+    width: 100%;
+    padding: 12px 16px;
+    font-size: 14px;
+  }
+
+  .stats {
+    grid-template-columns: 1fr;
+    gap: 12px;
+    padding-top: 0;
+  }
+
+  .stats h3 {
+    font-size: 18px;
+  }
+
+  .stats p {
+    font-size: 12px;
+  }
+
+  .hero-card {
+    border-radius: 16px;
+    padding: 20px;
+    gap: 12px;
+  }
+
+  .hero-card h2 {
+    font-size: 20px;
+  }
+
+  .hero-card p {
+    font-size: 14px;
+  }
+
+  .badge {
+    font-size: 10px;
+    padding: 4px 10px;
+  }
+
+  .strip {
+    padding: 16px 12px;
+    flex-direction: column;
+    gap: 12px;
+  }
+
+  .strip p {
+    font-size: 14px;
+  }
+}
+
+@media (max-width: 768px) and (min-width: 481px) {
+  .page {
+    padding: 24px 16px 48px;
+    gap: 40px;
+  }
+
+  .header {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .logo {
+    font-size: 24px;
+  }
+
+  .nav {
+    flex-wrap: wrap;
+    gap: 12px;
+  }
+
+  .hero h1 {
+    font-size: 32px;
+  }
+
+  .subtitle {
+    font-size: 16px;
+  }
+
+  .cta-row {
+    flex-direction: row;
+  }
+
+  .stats {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 12px;
+  }
+
+  .hero-card {
+    border-radius: 20px;
+    padding: 24px;
+  }
+
+  .hero-card h2 {
+    font-size: 24px;
+  }
+
+  .strip {
+    padding: 20px 24px;
+  }
+
+  .strip p {
+    font-size: 16px;
+  }
+}
