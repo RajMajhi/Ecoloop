@@ -1,3 +1,5 @@
+import SearchBar from "./SearchBar";
+
 export default function Home() {
   return (
     <div className="page">
@@ -22,10 +24,14 @@ export default function Home() {
             EcoLoop connects eco-friendly startups and everyday households,
             keeping great products in motion instead of in landfills.
           </p>
+
+          <SearchBar />
+
           <div className="cta-row">
             <button className="primary">Explore the Marketplace</button>
             <button className="secondary">List an Item</button>
           </div>
+
           <div className="stats">
             <div>
               <h3>2.4k+</h3>
