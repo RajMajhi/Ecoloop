@@ -1,0 +1,403 @@
+/* Login Page Styles */
+
+.login-container {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  background: radial-gradient(
+    circle at top,
+    #fff9ef 0%,
+    #f8f4ea 45%,
+    #eef2eb 100%
+  );
+}
+
+.login-header {
+  padding: 24px;
+  border-bottom: 1px solid rgba(21, 41, 30, 0.08);
+  background: rgba(255, 255, 255, 0.7);
+}
+
+.logo {
+  font-size: 24px;
+  font-weight: 700;
+  color: var(--leaf);
+  font-family: var(--font-serif);
+  cursor: pointer;
+  transition: color 0.3s ease;
+}
+
+.logo:hover {
+  color: var(--leaf-dark);
+}
+
+.login-main {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 40px 24px;
+}
+
+.login-card {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 0;
+  max-width: 900px;
+  width: 100%;
+  background: white;
+  border-radius: 16px;
+  box-shadow: 0 10px 40px rgba(21, 41, 30, 0.1);
+  overflow: hidden;
+  animation: slideIn 0.5s ease;
+}
+
+@keyframes slideIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.login-content {
+  padding: 60px 48px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.login-title {
+  font-size: 32px;
+  font-weight: 700;
+  color: var(--ink);
+  margin-bottom: 8px;
+  font-family: var(--font-serif);
+}
+
+.login-subtitle {
+  font-size: 14px;
+  color: var(--ink-muted);
+  margin-bottom: 32px;
+  line-height: 1.5;
+}
+
+.success-message {
+  padding: 12px 16px;
+  background: #d4f4dd;
+  color: #0f3a2b;
+  border-radius: 8px;
+  margin-bottom: 20px;
+  font-size: 14px;
+  font-weight: 500;
+  border-left: 4px solid var(--leaf);
+  animation: slideDown 0.3s ease;
+}
+
+.error-message {
+  padding: 12px 16px;
+  background: #fde5e5;
+  color: #8b0000;
+  border-radius: 8px;
+  margin-bottom: 20px;
+  font-size: 14px;
+  font-weight: 500;
+  border-left: 4px solid #e74c3c;
+  animation: slideDown 0.3s ease;
+}
+
+@keyframes slideDown {
+  from {
+    opacity: 0;
+    transform: translateY(-10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.login-form {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.form-label {
+  font-size: 14px;
+  font-weight: 600;
+  color: var(--ink);
+}
+
+.form-input {
+  padding: 12px 16px;
+  border: 2px solid #e0dbd2;
+  border-radius: 8px;
+  font-size: 14px;
+  font-family: var(--font-sans);
+  color: var(--ink);
+  transition: all 0.3s ease;
+  background: var(--surface);
+}
+
+.form-input::placeholder {
+  color: var(--ink-muted);
+  opacity: 0.6;
+}
+
+.form-input:focus {
+  outline: none;
+  border-color: var(--leaf);
+  background: white;
+  box-shadow: 0 0 0 3px rgba(28, 107, 77, 0.1);
+}
+
+.form-input.error {
+  border-color: #e74c3c;
+  background: rgba(231, 76, 60, 0.05);
+}
+
+.form-input.error:focus {
+  box-shadow: 0 0 0 3px rgba(231, 76, 60, 0.1);
+}
+
+.form-input:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+
+.error-text {
+  font-size: 12px;
+  color: #e74c3c;
+  font-weight: 500;
+  animation: slideDown 0.3s ease;
+}
+
+.form-footer {
+  display: flex;
+  justify-content: flex-end;
+  margin-top: 8px;
+}
+
+.forgot-link {
+  font-size: 13px;
+  color: var(--leaf);
+  font-weight: 600;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.forgot-link:hover {
+  color: var(--leaf-dark);
+  text-decoration: underline;
+}
+
+.submit-button {
+  padding: 14px 24px;
+  background: var(--leaf);
+  color: white;
+  border: none;
+  border-radius: 8px;
+  font-size: 16px;
+  font-weight: 600;
+  font-family: var(--font-sans);
+  cursor: pointer;
+  transition: all 0.3s ease;
+  margin-top: 8px;
+}
+
+.submit-button:hover:not(:disabled) {
+  background: var(--leaf-dark);
+  transform: translateY(-2px);
+  box-shadow: 0 8px 20px rgba(28, 107, 77, 0.3);
+}
+
+.submit-button:active:not(:disabled) {
+  transform: translateY(0);
+}
+
+.submit-button:disabled {
+  opacity: 0.7;
+  cursor: not-allowed;
+}
+
+.login-divider {
+  text-align: center;
+  margin: 24px 0 16px;
+  font-size: 13px;
+  color: var(--ink-muted);
+  font-weight: 500;
+}
+
+.signup-link {
+  padding: 12px 24px;
+  background: var(--surface-strong);
+  color: var(--leaf);
+  border: 2px solid var(--leaf);
+  border-radius: 8px;
+  text-align: center;
+  font-size: 14px;
+  font-weight: 600;
+  text-decoration: none;
+  transition: all 0.3s ease;
+  cursor: pointer;
+}
+
+.signup-link:hover {
+  background: var(--leaf);
+  color: white;
+}
+
+.login-illustration {
+  background: linear-gradient(135deg, rgba(28, 107, 77, 0.08) 0%, rgba(243, 184, 107, 0.08) 100%);
+  padding: 60px 48px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-left: 1px solid rgba(21, 41, 30, 0.08);
+}
+
+.illustration-content {
+  text-align: center;
+}
+
+.eco-icon {
+  font-size: 64px;
+  margin-bottom: 24px;
+  animation: float 3s ease-in-out infinite;
+}
+
+@keyframes float {
+  0%,
+  100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
+}
+
+.illustration-content h2 {
+  font-size: 24px;
+  font-weight: 700;
+  color: var(--leaf);
+  margin-bottom: 12px;
+  font-family: var(--font-serif);
+}
+
+.illustration-content p {
+  font-size: 14px;
+  color: var(--ink-muted);
+  line-height: 1.6;
+  margin-bottom: 24px;
+}
+
+.benefits-list {
+  list-style: none;
+  text-align: left;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.benefits-list li {
+  font-size: 13px;
+  color: var(--ink);
+  font-weight: 500;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.login-footer {
+  padding: 24px;
+  text-align: center;
+  border-top: 1px solid rgba(21, 41, 30, 0.08);
+  background: rgba(255, 255, 255, 0.7);
+  font-size: 12px;
+  color: var(--ink-muted);
+}
+
+.login-footer a {
+  color: var(--leaf);
+  text-decoration: none;
+  font-weight: 600;
+  transition: color 0.3s ease;
+}
+
+.login-footer a:hover {
+  color: var(--leaf-dark);
+  text-decoration: underline;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .login-card {
+    grid-template-columns: 1fr;
+  }
+
+  .login-content {
+    padding: 48px 32px;
+  }
+
+  .login-illustration {
+    padding: 40px 32px;
+    border-left: none;
+    border-top: 1px solid rgba(21, 41, 30, 0.08);
+  }
+
+  .login-title {
+    font-size: 28px;
+  }
+
+  .illustration-content h2 {
+    font-size: 20px;
+  }
+
+  .eco-icon {
+    font-size: 48px;
+  }
+}
+
+@media (max-width: 640px) {
+  .login-main {
+    padding: 24px 16px;
+  }
+
+  .login-content {
+    padding: 32px 24px;
+  }
+
+  .login-illustration {
+    padding: 32px 24px;
+  }
+
+  .login-title {
+    font-size: 24px;
+  }
+
+  .login-subtitle {
+    font-size: 13px;
+  }
+
+  .illustration-content h2 {
+    font-size: 18px;
+  }
+
+  .eco-icon {
+    font-size: 40px;
+  }
+
+  .benefits-list li {
+    font-size: 12px;
+  }
+}
