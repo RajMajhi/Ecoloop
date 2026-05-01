@@ -99,3 +99,14 @@ Refer to ROADMAP.md for project plan.
 
 ## Sample Data
 Dummy product data added in backend/src/data/products.json
+
+## Screenshots
+
+### Home Page
+![Home Page](https://via.placeholder.com/800x400?text=Home+Page)
+
+### Marketplace
+![Marketplace](https://via.placeholder.com/800x400?text=Marketplace)
+
+### Dashboard
+![Dashboard](https://via.placeholder.com/800x400?text=Dashboard)
