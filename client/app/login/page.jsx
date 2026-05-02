@@ -179,13 +179,6 @@ export default function LoginPage() {
         </div>
       </main>
 
-      <footer className="login-footer">
-        <p>
-          By logging in, you agree to our{' '}
-          <Link href="/terms">Terms of Service</Link> and{' '}
-          <Link href="/privacy">Privacy Policy</Link>
-        </p>
-      </footer>
     </div>
   );
 }

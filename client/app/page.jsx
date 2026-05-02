@@ -1,4 +1,4 @@
-import SearchBar from "./SearchBar";
+import SearchBar from "../../web/app/SearchBar";
 
 export default function Home() {
   return (
@@ -16,7 +16,7 @@ export default function Home() {
       </header>
 
       {/* HERO SECTION */}
-      <main className="hero">
+      <main className="hero" id="about">
         <div className="hero-text">
           <p className="eyebrow">Sustainable Marketplace</p>
 
