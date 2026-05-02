@@ -1,4 +1,5 @@
 import "./globals.css";
+import Footer from "./components/Footer";
 import { Fraunces, Space_Grotesk } from "next/font/google";
 
 const fraunces = Fraunces({
@@ -23,7 +24,10 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <body className={`${fraunces.variable} ${spaceGrotesk.variable}`}>
-        {children}
+        <div className="app-shell">
+          <div className="app-shell__content">{children}</div>
+          <Footer />
+        </div>
       </body>
     </html>
   );
