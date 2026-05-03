@@ -110,3 +110,5 @@ Dummy product data added in backend/src/data/products.json
 
 ### Dashboard
 ![Dashboard](https://via.placeholder.com/800x400?text=Dashboard)
+
+You can start by fixing small bugs or improving documentation.
