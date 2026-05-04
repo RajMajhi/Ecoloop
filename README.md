@@ -100,6 +100,18 @@ Refer to ROADMAP.md for project plan.
 ## Sample Data
 Dummy product data added in backend/src/data/products.json
 
+## Project Overview
+Ecoloop is a platform that promotes reuse of products and reduces environmental waste.
+
+## Setup Instructions
+1. Clone the repository
+2. Open the project folder
+3. Run using live server
+
+## Tech Stack
+- HTML
+- CSS
+- JavaScript
 ## Screenshots
 
 ### Home Page
