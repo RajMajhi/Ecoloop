@@ -100,13 +100,41 @@ Refer to ROADMAP.md for project plan.
 ## Sample Data
 Dummy product data added in backend/src/data/products.json
 
-## Screenshots
+## 📸 UI Preview
 
-### Home Page
-![Home Page](https://via.placeholder.com/800x400?text=Home+Page)
+### 🏠 Home Page
+> Landing section with navigation and hero content.
 
-### Marketplace
-![Marketplace](https://via.placeholder.com/800x400?text=Marketplace)
+<p align="center">
+  <img src="home.png" width="80%" />
+</p>
 
-### Dashboard
-![Dashboard](https://via.placeholder.com/800x400?text=Dashboard)
+---
+
+### 🛒 Marketplace
+> Explore and search eco-friendly products.
+
+<p align="center">
+  <img src="marketplace.png" width="80%" />
+</p>
+
+---
+
+### 📊 Dashboard
+> View impact statistics and insights.
+
+<p align="center">
+  <img src="dashboard.png" width="80%" />
+</p>
+
+---
+
+> _Note: Screenshots are based on current UI structure in `/web/app/page.tsx`._
+
+---
+
+## 🔍 Observations
+
+- Frontend (`/web`) is not directly runnable due to missing `package.json`
+- Project structure contains nested folders which may be confusing to contributors
+- Setup instructions for frontend could be improved for better clarity
