@@ -36,18 +36,57 @@ The application should now be running locally.
 
 # Folder Structure
 
-<img width="161" height="112" alt="image" src="https://github.com/user-attachments/assets/7996005d-e9a5-48c7-92cf-15d385203b97" />
+EcoLoop is a small multi-part web project with a Node.js/Express backend and two frontend app folders (a React/Next.js client and a TypeScript Next.js web app). It's organized for clarity during development: a backend API serving data and two frontends that share UI components and styles.
 
-## 📁 Project Structure Explaination
+## High-level Tech
 
+- Backend: Node.js + Express ([backend/package.json](backend/package.json))
+- Frontend (client): React / Next.js (app directory) ([client/app](client/app))
+- Frontend (web): TypeScript + Next.js (app directory) ([web/app](web/app))
+- Dev tooling: `nodemon` for backend dev server
+
+## Top-level layout
+
+```
 Ecoloop_GsSOC-2026/
-│── client/        # Frontend (React / Next.js)
-│── server/        # Backend (Node.js / Express)
-│── docs/          # Documentation files
-│── .github/       # GitHub-specific configurations
-│── README.md
-│── CONTRIBUTING.md
-│── CODE_OF_CONDUCT.md
+├─ backend/            # Node.js + Express API
+├─ client/             # React/Next.js frontend (JSX)
+├─ web/                # TypeScript + Next.js frontend
+├─ docs/               # Documentation
+├─ README.md
+├─ CONTRIBUTING.md
+└─ ROADMAP.md
+```
+
+## Folder details (plain English)
+
+- `backend/` — the data & API (think: the shopkeeper)
+  - What it is: a small Node.js server that stores example product data and answers questions from the website.
+  - Why it matters: the frontends ask this server for product lists and messages (so the website can show items).
+  - Files to open: [backend/server.js](backend/server.js) (starts the server) and [backend/src/app.js](backend/src/app.js) (routes and middleware).
+  - Quick example: sample products are in [backend/src/data/products.json](backend/src/data/products.json). To run it locally:
+
+    ```powershell
+    cd backend
+    npm install
+    npm run dev
+    ```
+
+- `client/` — the main website you see in the browser (think: the shop window)
+  - What it is: a React/Next.js frontend that builds the visible pages (home, hero, lists, footer).
+  - Why it matters: this is where designers and front-end developers change text, layout, and visual elements.
+  - Files to open: [client/app/page.jsx](client/app/page.jsx) (homepage content) and [client/app/components/Footer.jsx](client/app/components/Footer.jsx) (site footer).
+  - Note: `client` imports a small search component from `web` to avoid duplicating UI.
+
+- `web/` — a TypeScript variant and shared UI (think: an alternate window or prototype)
+  - What it is: another Next.js app using TypeScript. It can be used for experiments, typing, or gradual migration.
+  - Why it matters: useful when you want stricter type checks or want to try new UI ideas without changing the main `client` app.
+  - Files to open: [web/app/page.tsx](web/app/page.tsx) and [web/app/SearchBar.jsx](web/app/SearchBar.jsx).
+
+- `docs/` — supporting documentation (API details, contribution guidelines, roadmap)
+  - Look here for API descriptions (`docs/api.md`), how to contribute (`CONTRIBUTING.md`), and project plans (`ROADMAP.md`).
+
+Tip for non-technical contributors: if you want to change wording or images on the site, edit files under `client/app/` (page text and components). If you want to change the sample product values shown in examples, edit `backend/src/data/products.json`.
 
 ##  .github Folder Explained
 
